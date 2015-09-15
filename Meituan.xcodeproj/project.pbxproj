@@ -9,11 +9,18 @@
 /* Begin PBXBuildFile section */
 		406973CA1BA82939003C85C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 406973C91BA82939003C85C5 /* main.m */; };
 		406973CD1BA82939003C85C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 406973CC1BA82939003C85C5 /* AppDelegate.m */; };
-		406973D01BA82939003C85C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 406973CF1BA82939003C85C5 /* ViewController.m */; };
 		406973D31BA82939003C85C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406973D11BA82939003C85C5 /* Main.storyboard */; };
 		406973D51BA82939003C85C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406973D41BA82939003C85C5 /* Images.xcassets */; };
 		406973D81BA82939003C85C5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 406973D61BA82939003C85C5 /* LaunchScreen.xib */; };
 		406973E41BA82939003C85C5 /* MeituanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 406973E31BA82939003C85C5 /* MeituanTests.m */; };
+		406973FF1BA84D45003C85C5 /* GroupPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 406973FE1BA84D45003C85C5 /* GroupPurchaseViewController.m */; };
+		406974031BA84EBB003C85C5 /* DoorToDoorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 406974021BA84EBB003C85C5 /* DoorToDoorViewController.m */; };
+		406974071BA84EDA003C85C5 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 406974061BA84EDA003C85C5 /* BaseCollectionViewController.m */; };
+		4069740A1BA84F00003C85C5 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 406974091BA84F00003C85C5 /* BaseTableViewController.m */; };
+		4069740D1BA84F2E003C85C5 /* SellerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069740C1BA84F2E003C85C5 /* SellerViewController.m */; };
+		406974101BA84F3E003C85C5 /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069740F1BA84F3E003C85C5 /* MyProfileViewController.m */; };
+		406974131BA84F47003C85C5 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 406974121BA84F47003C85C5 /* MoreViewController.m */; };
+		E47B8D0C2C9C11632EFD85DC /* libPods-Meituan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB6F480B2F236415FABD900 /* libPods-Meituan.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +34,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CB6F480B2F236415FABD900 /* libPods-Meituan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Meituan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406973C41BA82939003C85C5 /* Meituan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meituan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		406973C81BA82939003C85C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		406973C91BA82939003C85C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		406973CB1BA82939003C85C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		406973CC1BA82939003C85C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		406973CE1BA82939003C85C5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		406973CF1BA82939003C85C5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		406973D21BA82939003C85C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		406973D41BA82939003C85C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		406973D71BA82939003C85C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		406973DD1BA82939003C85C5 /* MeituanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeituanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		406973E21BA82939003C85C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		406973E31BA82939003C85C5 /* MeituanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeituanTests.m; sourceTree = "<group>"; };
+		406973FD1BA84D45003C85C5 /* GroupPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupPurchaseViewController.h; sourceTree = "<group>"; };
+		406973FE1BA84D45003C85C5 /* GroupPurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupPurchaseViewController.m; sourceTree = "<group>"; };
+		406974011BA84EBB003C85C5 /* DoorToDoorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoorToDoorViewController.h; sourceTree = "<group>"; };
+		406974021BA84EBB003C85C5 /* DoorToDoorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoorToDoorViewController.m; sourceTree = "<group>"; };
+		406974051BA84EDA003C85C5 /* BaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewController.h; sourceTree = "<group>"; };
+		406974061BA84EDA003C85C5 /* BaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewController.m; sourceTree = "<group>"; };
+		406974081BA84F00003C85C5 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		406974091BA84F00003C85C5 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		4069740B1BA84F2E003C85C5 /* SellerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SellerViewController.h; sourceTree = "<group>"; };
+		4069740C1BA84F2E003C85C5 /* SellerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SellerViewController.m; sourceTree = "<group>"; };
+		4069740E1BA84F3E003C85C5 /* MyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfileViewController.h; sourceTree = "<group>"; };
+		4069740F1BA84F3E003C85C5 /* MyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileViewController.m; sourceTree = "<group>"; };
+		406974111BA84F47003C85C5 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		406974121BA84F47003C85C5 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		53A364E2149F261D65C16AC6 /* Pods-Meituan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meituan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Meituan/Pods-Meituan.debug.xcconfig"; sourceTree = "<group>"; };
+		B8A0949B69D81C418746E6C4 /* Pods-Meituan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meituan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meituan/Pods-Meituan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E47B8D0C2C9C11632EFD85DC /* libPods-Meituan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +89,8 @@
 				406973C61BA82939003C85C5 /* Meituan */,
 				406973E01BA82939003C85C5 /* MeituanTests */,
 				406973C51BA82939003C85C5 /* Products */,
+				D3960CED85EDE2170A36FE42 /* Pods */,
+				7DA61C9896DC676779AECE53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +106,12 @@
 		406973C61BA82939003C85C5 /* Meituan */ = {
 			isa = PBXGroup;
 			children = (
+				406973FC1BA84D0D003C85C5 /* Util */,
+				406973FB1BA84D06003C85C5 /* View */,
+				406973FA1BA84D00003C85C5 /* Model */,
+				406973F91BA84CF2003C85C5 /* ViewController */,
 				406973CB1BA82939003C85C5 /* AppDelegate.h */,
 				406973CC1BA82939003C85C5 /* AppDelegate.m */,
-				406973CE1BA82939003C85C5 /* ViewController.h */,
-				406973CF1BA82939003C85C5 /* ViewController.m */,
 				406973D11BA82939003C85C5 /* Main.storyboard */,
 				406973D41BA82939003C85C5 /* Images.xcassets */,
 				406973D61BA82939003C85C5 /* LaunchScreen.xib */,
@@ -119,6 +146,81 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		406973F91BA84CF2003C85C5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				406974041BA84ECC003C85C5 /* BaseController */,
+				406974001BA84E89003C85C5 /* HomeController */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		406973FA1BA84D00003C85C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		406973FB1BA84D06003C85C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		406973FC1BA84D0D003C85C5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		406974001BA84E89003C85C5 /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+				406973FD1BA84D45003C85C5 /* GroupPurchaseViewController.h */,
+				406973FE1BA84D45003C85C5 /* GroupPurchaseViewController.m */,
+				406974011BA84EBB003C85C5 /* DoorToDoorViewController.h */,
+				406974021BA84EBB003C85C5 /* DoorToDoorViewController.m */,
+				4069740B1BA84F2E003C85C5 /* SellerViewController.h */,
+				4069740C1BA84F2E003C85C5 /* SellerViewController.m */,
+				4069740E1BA84F3E003C85C5 /* MyProfileViewController.h */,
+				4069740F1BA84F3E003C85C5 /* MyProfileViewController.m */,
+				406974111BA84F47003C85C5 /* MoreViewController.h */,
+				406974121BA84F47003C85C5 /* MoreViewController.m */,
+			);
+			name = HomeController;
+			sourceTree = "<group>";
+		};
+		406974041BA84ECC003C85C5 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				406974051BA84EDA003C85C5 /* BaseCollectionViewController.h */,
+				406974061BA84EDA003C85C5 /* BaseCollectionViewController.m */,
+				406974081BA84F00003C85C5 /* BaseTableViewController.h */,
+				406974091BA84F00003C85C5 /* BaseTableViewController.m */,
+			);
+			name = BaseController;
+			sourceTree = "<group>";
+		};
+		7DA61C9896DC676779AECE53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CB6F480B2F236415FABD900 /* libPods-Meituan.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3960CED85EDE2170A36FE42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53A364E2149F261D65C16AC6 /* Pods-Meituan.debug.xcconfig */,
+				B8A0949B69D81C418746E6C4 /* Pods-Meituan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 406973E71BA82939003C85C5 /* Build configuration list for PBXNativeTarget "Meituan" */;
 			buildPhases = (
+				32A1282CEAF40BAA5349D6BB /* Check Pods Manifest.lock */,
 				406973C01BA82939003C85C5 /* Sources */,
 				406973C11BA82939003C85C5 /* Frameworks */,
 				406973C21BA82939003C85C5 /* Resources */,
+				DB53A29ABEAF2E3C6F770979 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,14 +318,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32A1282CEAF40BAA5349D6BB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB53A29ABEAF2E3C6F770979 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Meituan/Pods-Meituan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		406973C01BA82939003C85C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				406973D01BA82939003C85C5 /* ViewController.m in Sources */,
 				406973CD1BA82939003C85C5 /* AppDelegate.m in Sources */,
 				406973CA1BA82939003C85C5 /* main.m in Sources */,
+				406974101BA84F3E003C85C5 /* MyProfileViewController.m in Sources */,
+				406973FF1BA84D45003C85C5 /* GroupPurchaseViewController.m in Sources */,
+				406974131BA84F47003C85C5 /* MoreViewController.m in Sources */,
+				406974071BA84EDA003C85C5 /* BaseCollectionViewController.m in Sources */,
+				4069740A1BA84F00003C85C5 /* BaseTableViewController.m in Sources */,
+				406974031BA84EBB003C85C5 /* DoorToDoorViewController.m in Sources */,
+				4069740D1BA84F2E003C85C5 /* SellerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +490,7 @@
 		};
 		406973E81BA82939003C85C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53A364E2149F261D65C16AC6 /* Pods-Meituan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Meituan/Info.plist;
@@ -357,6 +501,7 @@
 		};
 		406973E91BA82939003C85C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8A0949B69D81C418746E6C4 /* Pods-Meituan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Meituan/Info.plist;
@@ -418,6 +563,7 @@
 				406973E91BA82939003C85C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		406973EA1BA82939003C85C5 /* Build configuration list for PBXNativeTarget "MeituanTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +572,7 @@
 				406973EC1BA82939003C85C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

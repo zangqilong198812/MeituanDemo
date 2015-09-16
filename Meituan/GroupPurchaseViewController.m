@@ -7,6 +7,11 @@
 //
 
 #import "GroupPurchaseViewController.h"
+#import "UIColor+HexColor.h"
+#import "Seller+request.h"
+
+static NSString * const reuseIdentifier = @"Cell";
+static NSString * const kImageCollectionViewCell = @"imageCollectionViewCell";
 
 @interface GroupPurchaseViewController ()
 
@@ -14,17 +19,14 @@
 
 @implementation GroupPurchaseViewController
 
-static NSString * const reuseIdentifier = @"Cell";
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithHex:@"#06C1AE"]];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
+    
+    [Seller requestSeller];
     // Do any additional setup after loading the view.
 }
 

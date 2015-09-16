@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,34 +39,13 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>YapDatabase.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>22D8EEEB12D2B694B200D44637463B74</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4EB25C815668D7DD94B35A59391763C3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5352D432641F0656C90741034E32F31E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C048CE55EFF7C0F5D937A566C26BD503</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E38856831CB366C621117AB359826007</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

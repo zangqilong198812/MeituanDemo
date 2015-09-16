@@ -7,6 +7,7 @@ pod 'AFNetworking'
 pod 'Mantle'
 pod 'MJRefresh'
 pod 'MBProgressHUD'
+pod 'YapDatabase'
 end
 
 target 'MeituanTests' do

@@ -11,34 +11,24 @@
 
 @implementation Seller
 
-/*
- 
- @property (nonatomic, copy, readonly) NSString *title;
- @property (nonatomic, copy, readonly) NSString *range;
- @property (nonatomic, assign, readonly) NSNumber *price;
- @property (nonatomic, assign, readonly) NSNumber *value;
- @property (nonatomic, strong, readonly) NSNumber *noBooking;
- @property (nonatomic, strong, readonly) NSNumber *solds;
- @property (nonatomic, strong, readonly) NSURL *squareimgurl;
- */
-
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
+   
     return @{@"mname":@"mname",
              @"title":@"title",
              @"range":@"range",
              @"price":@"price",
              @"value":@"value",
-             @"noBooking":@"noBooking",
+             @"nobooking":@"nobooking",
              @"solds":@"solds",
              @"squareimgurl":@"squareimgurl",
              };
 }
 
-+ (NSValueTransformer *)noBookingJSONTransformer{
++ (NSValueTransformer *)nobookingJSONTransformer{
     
     return [NSValueTransformer mtl_valueMappingTransformerWithDictionary:@{
-                                                                           @"1": @(YES),
-                                                                           @"0": @(NO)
+                                                                           @(1): @(YES),
+                                                                           @(0): @(NO)
                                                                            }];
 }
 

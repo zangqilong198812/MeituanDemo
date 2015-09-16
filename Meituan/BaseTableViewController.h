@@ -12,4 +12,6 @@
 
 @property (nonatomic, assign) BOOL shouldInitPullToRefresh;
 
+- (void)shouldAddPullToRefresh:(BOOL)isAdd;
+
 @end

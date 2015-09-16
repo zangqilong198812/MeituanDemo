@@ -11,8 +11,8 @@
 
 @interface BaseCollectionViewController ()
 {
-    NSArray *pullAnimationImages;
-    NSArray *shakeAnimationImages;
+    NSMutableArray *pullAnimationImages;
+    NSMutableArray *shakeAnimationImages;
 }
 @end
 
@@ -23,19 +23,34 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
+    pullAnimationImages = [NSMutableArray array];
+    shakeAnimationImages = [NSMutableArray array];
     
-    // Register cell classes
+    NSArray *pullAnimationName = @[@"icon_pull_animation_1",@"icon_pull_animation_2",@"icon_pull_animation_3",@"icon_pull_animation_4",@"icon_pull_animation_5"];
+    NSArray *shakeAnimationName = @[@"icon_shake_animation_1",@"icon_shake_animation_2",@"icon_shake_animation_3",@"icon_shake_animation_4",
+                                    @"icon_shake_animation_5",@"icon_shake_animation_6",@"icon_shake_animation_7",@"icon_shake_animation_8"];
+    for (NSString *str in pullAnimationName) {
+        UIImage *image = [UIImage imageNamed:str];
+        [pullAnimationImages addObject:image];
+    }
+    
+    for (NSString *str in shakeAnimationName) {
+        UIImage *image = [UIImage imageNamed:str];
+        [shakeAnimationImages addObject:image];
+    }
+    
+    [self shouldAddPullToRefresh:_shouldInitPullToRefresh];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    if (_shouldInitPullToRefresh) {
-        pullAnimationImages = @[@"icon_pull_animation_1",@"icon_pull_animation_2",@"icon_pull_animation_3",@"icon_pull_animation_4",@"icon_pull_animation_5"];
-        shakeAnimationImages = @[@"icon_shake_animation_1",@"icon_shake_animation_2",@"icon_shake_animation_3",@"icon_shake_animation_4",
-                                 @"icon_shake_animation_5",@"icon_shake_animation_6",@"icon_shake_animation_7",@"icon_shake_animation_8"];
+    // Do any additional setup after loading the view.
+}
+
+- (void)shouldAddPullToRefresh:(BOOL)isAdd
+{
+    if (isAdd) {
         MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
         // 设置普通状态的动画图片
-        [header setImages:pullAnimationImages forState:MJRefreshStateIdle];
+        [header setImages:@[[UIImage imageNamed:@"icon_transform_animation"]] forState:MJRefreshStateIdle];
         // 设置即将刷新状态的动画图片（一松开就会刷新的状态）
         [header setImages:pullAnimationImages forState:MJRefreshStatePulling];
         // 设置正在刷新状态的动画图片
@@ -45,9 +60,9 @@ static NSString * const reuseIdentifier = @"Cell";
         header.stateLabel.hidden = YES;
         // 设置header
         self.collectionView.header = header;
+    }else{
+        self.collectionView.header = nil;
     }
-    
-    // Do any additional setup after loading the view.
 }
 
 - (void)loadNewData

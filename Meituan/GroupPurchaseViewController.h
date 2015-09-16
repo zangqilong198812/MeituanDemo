@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseCollectionViewController.h"
+#import "BaseTableViewController.h"
 
-@interface GroupPurchaseViewController : BaseCollectionViewController
+@interface GroupPurchaseViewController : BaseTableViewController
 
 @end

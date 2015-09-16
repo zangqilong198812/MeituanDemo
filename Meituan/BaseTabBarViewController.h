@@ -1,5 +1,5 @@
 //
-//  SellerCollectionViewCell.h
+//  BaseTabBarViewController.h
 //  Meituan
 //
 //  Created by 臧其龙 on 15/9/16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SellerCollectionViewCell : UICollectionViewCell
+@interface BaseTabBarViewController : UITabBarController
 
 @end

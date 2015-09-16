@@ -1,5 +1,5 @@
 //
-//  PriceLabel.h
+//  SellerTableViewCell.h
 //  Meituan
 //
 //  Created by 臧其龙 on 15/9/16.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Seller.h"
 
-@interface PriceLabel : UILabel
+@interface SellerTableViewCell : UITableViewCell
 
-@property (nonatomic, assign) BOOL isShowLine;
+- (void)bindDataWithSeller:(Seller *)seller;
 
 @end

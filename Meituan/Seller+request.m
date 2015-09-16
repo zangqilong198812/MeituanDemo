@@ -13,15 +13,16 @@ static NSString * const kRequestSellerURL = @"http://api.meituan.com/group/v1/re
 
 @implementation Seller (request)
 
-+ (void)requestSeller
++ (void)requestSellerWithCompletion:(requestFinishedCompletionBlock)successBlock
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:kRequestSellerURL parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-       // NSLog(@"%@", responseObject[@"data"]);
+       
         NSArray *sellerArray = [MTLJSONAdapter modelsOfClass:[Seller class] fromJSONArray:responseObject[@"data"] error:nil];
-        Seller *seller = sellerArray[0];
+        if (successBlock) {
+            successBlock(sellerArray);
+        }
         
-        NSLog(@"%@",sellerArray);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
     }];

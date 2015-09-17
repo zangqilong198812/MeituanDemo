@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D8C50BD3CFBA673A6CDFED39"
-               BuildableName = "libSDWebImage.a"
-               BlueprintName = "SDWebImage"
+               BlueprintIdentifier = "87474778184CAE4DDE2CA71A"
+               BuildableName = "libMCSwipeTableViewCell.a"
+               BlueprintName = "MCSwipeTableViewCell"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

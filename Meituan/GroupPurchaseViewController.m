@@ -10,6 +10,7 @@
 #import "UIColor+HexColor.h"
 #import "Seller+request.h"
 #import "SellerTableViewCell.h"
+#import "LineView.h"
 
 static NSString * const kSellerTableViewCellID = @"kSellerTableViewCellID";
 
@@ -66,5 +67,22 @@ static NSString * const kSellerTableViewCellID = @"kSellerTableViewCellID";
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 75.0f;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 30;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    LineView *headerView = [[LineView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 30)];
+    [headerView addLineWithLineType:LineViewTypeTop];
+    UILabel *likeLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 100, 30)];
+    likeLabel.text = @"猜你喜欢";
+    likeLabel.textColor = [UIColor blackColor];
+    likeLabel.font = [UIFont boldSystemFontOfSize:14];
+    [headerView addSubview:likeLabel];
+    return headerView;
 }
 @end

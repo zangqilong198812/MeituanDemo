@@ -9,6 +9,7 @@
 #import "SellerTableViewCell.h"
 #import "UIImageView+WebCache.h"
 
+
 @interface SellerTableViewCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *sellerIconImageView;
 @property (weak, nonatomic) IBOutlet UILabel *sellerNameLabel;

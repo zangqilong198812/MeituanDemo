@@ -32,6 +32,7 @@ PODS:
     - Mantle/extobjc (= 2.0.5)
   - Mantle/extobjc (2.0.5)
   - MBProgressHUD (0.9.1)
+  - MCSwipeTableViewCell (2.1.4)
   - MJRefresh (2.4.10)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
@@ -45,6 +46,7 @@ DEPENDENCIES:
   - AFNetworking
   - Mantle
   - MBProgressHUD
+  - MCSwipeTableViewCell
   - MJRefresh
   - SDWebImage
   - YapDatabase
@@ -54,6 +56,7 @@ SPEC CHECKSUMS:
   CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
   Mantle: 1912395033f601de5adc8ee91e48f46e4c7051ad
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MCSwipeTableViewCell: 1b303e16c3a26b1982f3a68386e9b8c5fc8344c3
   MJRefresh: e52328552ed9cbfce3501e3820b18bf7643c65cc
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   YapDatabase: bcf13bd764ab4961fb48bef937becf964e50063d

@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MCSwipeTableViewCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,22 +52,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>041E29E4EE8D9F657341A9B80CDD9CB7</key>
+		<key>067F8666EFAE405A7D385C0389980A34</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>235B7B1804103B359ADF3F14A2DABB36</key>
+		<key>0E1A1BB55970204F772A3B9A84B8F078</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2D03340A33E6400FE76EA779C410EC8F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3A0738185D015C6271F33B0B02EC9306</key>
+		<key>1CFBEDC58D547E8DE7E0A18A7CC6E217</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5911888E2724AF92CDFB2FE2CDB19AFE</key>
+		<key>64BF55BE76852B1C8B625130FAC79022</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,7 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7C70DC88E57F15DAB7E5A8556B8272B2</key>
+		<key>75A7F4D499A718E7290CDEA40586189B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ADA71CE30CA453099E8DE9DEC2FBBAB5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0BC29362ABB36609C2A11C4D48D2EC4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

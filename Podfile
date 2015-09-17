@@ -9,6 +9,7 @@ pod 'Mantle'
 pod 'MJRefresh'
 pod 'MBProgressHUD'
 pod 'YapDatabase'
+pod 'MCSwipeTableViewCell'
 end
 
 target 'MeituanTests' do

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Seller.h"
+#import "MCSwipeTableViewCell.h"
 
-@interface SellerTableViewCell : UITableViewCell
+@interface SellerTableViewCell : MCSwipeTableViewCell
 
 - (void)bindDataWithSeller:(Seller *)seller;
 

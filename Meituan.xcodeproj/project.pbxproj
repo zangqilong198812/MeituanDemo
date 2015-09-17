@@ -20,6 +20,9 @@
 		4069740D1BA84F2E003C85C5 /* SellerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069740C1BA84F2E003C85C5 /* SellerViewController.m */; };
 		406974101BA84F3E003C85C5 /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069740F1BA84F3E003C85C5 /* MyProfileViewController.m */; };
 		406974131BA84F47003C85C5 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 406974121BA84F47003C85C5 /* MoreViewController.m */; };
+		40A568101BAAA6F000197EF9 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A5680F1BAAA6F000197EF9 /* BannerViewController.m */; };
+		40A568161BAAA81B00197EF9 /* VerticalButtonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A568151BAAA81B00197EF9 /* VerticalButtonCollectionViewCell.m */; };
+		40A568191BAABB3300197EF9 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A568181BAABB3300197EF9 /* LineView.m */; };
 		40D92E7A1BA8FC5C0011995A /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D92E791BA8FC5C0011995A /* UIColor+HexColor.m */; };
 		40D92E831BA900070011995A /* icon_pull_animation_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D92E7E1BA900070011995A /* icon_pull_animation_1@2x.png */; };
 		40D92E841BA900070011995A /* icon_pull_animation_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D92E7F1BA900070011995A /* icon_pull_animation_2@2x.png */; };
@@ -83,6 +86,12 @@
 		4069740F1BA84F3E003C85C5 /* MyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileViewController.m; sourceTree = "<group>"; };
 		406974111BA84F47003C85C5 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
 		406974121BA84F47003C85C5 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		40A5680E1BAAA6F000197EF9 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		40A5680F1BAAA6F000197EF9 /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		40A568141BAAA81B00197EF9 /* VerticalButtonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalButtonCollectionViewCell.h; sourceTree = "<group>"; };
+		40A568151BAAA81B00197EF9 /* VerticalButtonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalButtonCollectionViewCell.m; sourceTree = "<group>"; };
+		40A568171BAABB3300197EF9 /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
+		40A568181BAABB3300197EF9 /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
 		40D92E781BA8FC5C0011995A /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
 		40D92E791BA8FC5C0011995A /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
 		40D92E7E1BA900070011995A /* icon_pull_animation_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_pull_animation_1@2x.png"; sourceTree = "<group>"; };
@@ -224,14 +233,13 @@
 		406973FB1BA84D06003C85C5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				40A568131BAAA80100197EF9 /* CollectionViewCell */,
+				40A568121BAAA7FB00197EF9 /* TableViewCell */,
+				40A568111BAAA7F000197EF9 /* ChildViewController */,
 				40D92E981BA9048C0011995A /* PriceLabel.h */,
 				40D92E991BA9048C0011995A /* PriceLabel.m */,
-				40D92E9E1BA905410011995A /* TopMenuViewController.h */,
-				40D92E9F1BA905410011995A /* TopMenuViewController.m */,
-				40D92EA11BA9068A0011995A /* ChildCategoryViewController.h */,
-				40D92EA21BA9068A0011995A /* ChildCategoryViewController.m */,
-				40D92EBC1BA993610011995A /* SellerTableViewCell.h */,
-				40D92EBD1BA993610011995A /* SellerTableViewCell.m */,
+				40A568171BAABB3300197EF9 /* LineView.h */,
+				40A568181BAABB3300197EF9 /* LineView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -275,6 +283,37 @@
 				40D92EBA1BA96C600011995A /* BaseTabBarViewController.m */,
 			);
 			name = BaseController;
+			sourceTree = "<group>";
+		};
+		40A568111BAAA7F000197EF9 /* ChildViewController */ = {
+			isa = PBXGroup;
+			children = (
+				40D92E9E1BA905410011995A /* TopMenuViewController.h */,
+				40D92E9F1BA905410011995A /* TopMenuViewController.m */,
+				40D92EA11BA9068A0011995A /* ChildCategoryViewController.h */,
+				40D92EA21BA9068A0011995A /* ChildCategoryViewController.m */,
+				40A5680E1BAAA6F000197EF9 /* BannerViewController.h */,
+				40A5680F1BAAA6F000197EF9 /* BannerViewController.m */,
+			);
+			name = ChildViewController;
+			sourceTree = "<group>";
+		};
+		40A568121BAAA7FB00197EF9 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				40D92EBC1BA993610011995A /* SellerTableViewCell.h */,
+				40D92EBD1BA993610011995A /* SellerTableViewCell.m */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		40A568131BAAA80100197EF9 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				40A568141BAAA81B00197EF9 /* VerticalButtonCollectionViewCell.h */,
+				40A568151BAAA81B00197EF9 /* VerticalButtonCollectionViewCell.m */,
+			);
+			name = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		40D92E7B1BA8FFCF0011995A /* Resource */ = {
@@ -490,6 +529,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				406973CD1BA82939003C85C5 /* AppDelegate.m in Sources */,
+				40A568101BAAA6F000197EF9 /* BannerViewController.m in Sources */,
+				40A568191BAABB3300197EF9 /* LineView.m in Sources */,
+				40A568161BAAA81B00197EF9 /* VerticalButtonCollectionViewCell.m in Sources */,
 				40D92EA01BA905410011995A /* TopMenuViewController.m in Sources */,
 				40D92EB51BA957F00011995A /* Seller+request.m in Sources */,
 				406973CA1BA82939003C85C5 /* main.m in Sources */,

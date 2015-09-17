@@ -23,6 +23,7 @@
 		40A568101BAAA6F000197EF9 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A5680F1BAAA6F000197EF9 /* BannerViewController.m */; };
 		40A568161BAAA81B00197EF9 /* VerticalButtonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A568151BAAA81B00197EF9 /* VerticalButtonCollectionViewCell.m */; };
 		40A568191BAABB3300197EF9 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A568181BAABB3300197EF9 /* LineView.m */; };
+		40A5681C1BAAD57000197EF9 /* FamousSellerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A5681B1BAAD57000197EF9 /* FamousSellerTableViewCell.m */; };
 		40D92E7A1BA8FC5C0011995A /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D92E791BA8FC5C0011995A /* UIColor+HexColor.m */; };
 		40D92E831BA900070011995A /* icon_pull_animation_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D92E7E1BA900070011995A /* icon_pull_animation_1@2x.png */; };
 		40D92E841BA900070011995A /* icon_pull_animation_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D92E7F1BA900070011995A /* icon_pull_animation_2@2x.png */; };
@@ -92,6 +93,8 @@
 		40A568151BAAA81B00197EF9 /* VerticalButtonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalButtonCollectionViewCell.m; sourceTree = "<group>"; };
 		40A568171BAABB3300197EF9 /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
 		40A568181BAABB3300197EF9 /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
+		40A5681A1BAAD57000197EF9 /* FamousSellerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamousSellerTableViewCell.h; sourceTree = "<group>"; };
+		40A5681B1BAAD57000197EF9 /* FamousSellerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamousSellerTableViewCell.m; sourceTree = "<group>"; };
 		40D92E781BA8FC5C0011995A /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
 		40D92E791BA8FC5C0011995A /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
 		40D92E7E1BA900070011995A /* icon_pull_animation_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_pull_animation_1@2x.png"; sourceTree = "<group>"; };
@@ -303,6 +306,8 @@
 			children = (
 				40D92EBC1BA993610011995A /* SellerTableViewCell.h */,
 				40D92EBD1BA993610011995A /* SellerTableViewCell.m */,
+				40A5681A1BAAD57000197EF9 /* FamousSellerTableViewCell.h */,
+				40A5681B1BAAD57000197EF9 /* FamousSellerTableViewCell.m */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -531,6 +536,7 @@
 				406973CD1BA82939003C85C5 /* AppDelegate.m in Sources */,
 				40A568101BAAA6F000197EF9 /* BannerViewController.m in Sources */,
 				40A568191BAABB3300197EF9 /* LineView.m in Sources */,
+				40A5681C1BAAD57000197EF9 /* FamousSellerTableViewCell.m in Sources */,
 				40A568161BAAA81B00197EF9 /* VerticalButtonCollectionViewCell.m in Sources */,
 				40D92EA01BA905410011995A /* TopMenuViewController.m in Sources */,
 				40D92EB51BA957F00011995A /* Seller+request.m in Sources */,

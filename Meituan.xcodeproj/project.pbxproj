@@ -188,7 +188,7 @@
 			children = (
 				40D92EB61BA959340011995A /* HttpRequest */,
 				40D92E7B1BA8FFCF0011995A /* Resource */,
-				406973FC1BA84D0D003C85C5 /* Util */,
+				406973FC1BA84D0D003C85C5 /* Category */,
 				406973FB1BA84D06003C85C5 /* View */,
 				406973FA1BA84D00003C85C5 /* Model */,
 				406973F91BA84CF2003C85C5 /* ViewController */,
@@ -259,7 +259,7 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		406973FC1BA84D0D003C85C5 /* Util */ = {
+		406973FC1BA84D0D003C85C5 /* Category */ = {
 			isa = PBXGroup;
 			children = (
 				40D92E781BA8FC5C0011995A /* UIColor+HexColor.h */,
@@ -275,7 +275,7 @@
 				40D7B8C81BAB9AB10011AAB2 /* UIView+AddHorizontalLine.h */,
 				40D7B8C91BAB9AB10011AAB2 /* UIView+AddHorizontalLine.m */,
 			);
-			name = Util;
+			name = Category;
 			sourceTree = "<group>";
 		};
 		406974001BA84E89003C85C5 /* HomeController */ = {
@@ -344,13 +344,13 @@
 		40D92E7B1BA8FFCF0011995A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				40D92E7D1BA8FFF50011995A /* PullAnimation */,
-				40D92E7C1BA8FFD90011995A /* ShakeAnimation */,
+				40D92E7D1BA8FFF50011995A /* PullAnimationImages */,
+				40D92E7C1BA8FFD90011995A /* ShakeAnimationImages */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
 		};
-		40D92E7C1BA8FFD90011995A /* ShakeAnimation */ = {
+		40D92E7C1BA8FFD90011995A /* ShakeAnimationImages */ = {
 			isa = PBXGroup;
 			children = (
 				40D92E881BA900190011995A /* icon_shake_animation_1@2x.png */,
@@ -362,10 +362,10 @@
 				40D92E8E1BA900190011995A /* icon_shake_animation_7@2x.png */,
 				40D92E8F1BA900190011995A /* icon_shake_animation_8@2x.png */,
 			);
-			name = ShakeAnimation;
+			name = ShakeAnimationImages;
 			sourceTree = "<group>";
 		};
-		40D92E7D1BA8FFF50011995A /* PullAnimation */ = {
+		40D92E7D1BA8FFF50011995A /* PullAnimationImages */ = {
 			isa = PBXGroup;
 			children = (
 				40D92EB71BA96BDB0011995A /* icon_transform_animation@2x.png */,
@@ -375,7 +375,7 @@
 				40D92E811BA900070011995A /* icon_pull_animation_4@2x.png */,
 				40D92E821BA900070011995A /* icon_pull_animation_5@2x.png */,
 			);
-			name = PullAnimation;
+			name = PullAnimationImages;
 			sourceTree = "<group>";
 		};
 		40D92EB61BA959340011995A /* HttpRequest */ = {

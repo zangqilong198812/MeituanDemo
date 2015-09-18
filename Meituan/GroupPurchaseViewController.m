@@ -11,12 +11,14 @@
 #import "Seller+request.h"
 #import "SellerTableViewCell.h"
 #import "LineView.h"
+#import <AFNetworking.h>
 
 static NSString * const kSellerTableViewCellID = @"kSellerTableViewCellID";
 
 @interface GroupPurchaseViewController ()<UITableViewDataSource, UITableViewDelegate>
 {
     NSArray *sellerArray;
+    AFHTTPRequestOperation *operation;
 }
 
 @end
@@ -32,10 +34,27 @@ static NSString * const kSellerTableViewCellID = @"kSellerTableViewCellID";
     [item setSelectedImage:[UIImage imageNamed:@"icon_tabbar_homepage_selected"]];
     
     self.shouldInitPullToRefresh = YES;
-    [Seller requestSellerWithCompletion:^(id object) {
-        sellerArray = (NSArray *)object;
-        [self.tableView reloadData];
-    }];
+//    [Seller requestSellerWithCompletion:^(id object) {
+//        sellerArray = (NSArray *)object;
+//        [self.tableView reloadData];
+//    }];
+    //        if (operation) {
+    //            [operation cancel];
+    //        }
+    for (int i = 1; i <= 10; i++) {
+
+        if (operation) {
+            [operation cancel];
+        }
+      operation = [Seller requestSellerWithCompletion:^(id object) {
+            NSLog(@"finished download %d",i);
+            
+        }];
+        
+    }
+    
+    
+  
     // Do any additional setup after loading the view.
 }
 

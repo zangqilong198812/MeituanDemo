@@ -7,9 +7,10 @@
 //
 
 #import "Seller.h"
+#import "AFNetworking.h"
 
 @interface Seller (request)
 
-+ (void)requestSellerWithCompletion:(requestFinishedCompletionBlock)successBlock;
++ (AFHTTPRequestOperation *)requestSellerWithCompletion:(requestFinishedCompletionBlock)successBlock;
 
 @end

@@ -84,7 +84,7 @@ static inline NSString * AFKeyPathFromOperationState(AFOperationState state) {
         case AFOperationPausedState:
             return @"isPaused";
         default: {
-#pragma clang diagnostic push
+ 
 #pragma clang diagnostic ignored "-Wunreachable-code"
             return @"state";
 #pragma clang diagnostic pop

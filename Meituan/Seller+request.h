@@ -8,8 +8,6 @@
 
 #import "Seller.h"
 
-typedef void (^requestFinishedCompletionBlock)(id);
-
 @interface Seller (request)
 
 + (void)requestSellerWithCompletion:(requestFinishedCompletionBlock)successBlock;

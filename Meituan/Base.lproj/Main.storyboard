@@ -337,6 +337,37 @@
                                     <outlet property="rightSellerValueLabel" destination="4c5-ll-xV7" id="CJZ-s3-PJO"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="kActivityCellID" rowHeight="180" id="mgo-aq-Eyn" customClass="FamousSellerTableViewCell">
+                                <rect key="frame" x="0.0" y="280" width="600" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mgo-aq-Eyn" id="BYS-Ap-YJk">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CPc-3r-moK">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="179"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aBF-sB-GDu">
+                                                    <rect key="frame" x="5" y="5" width="300" height="169"/>
+                                                    <color key="backgroundColor" red="1" green="0.38810939840000003" blue="0.3055176771" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="78e-dH-TbT">
+                                                    <rect key="frame" x="326" y="8" width="253" height="90"/>
+                                                    <color key="backgroundColor" red="0.82745098039999998" green="0.79215686269999996" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="78e-dH-TbT" firstAttribute="top" secondItem="CPc-3r-moK" secondAttribute="top" constant="5" id="5ic-rU-e2f"/>
+                                                <constraint firstAttribute="trailing" secondItem="78e-dH-TbT" secondAttribute="trailing" constant="5" id="XXv-ek-tW1"/>
+                                                <constraint firstItem="78e-dH-TbT" firstAttribute="leading" secondItem="aBF-sB-GDu" secondAttribute="trailing" constant="5" id="v5t-YR-Zdu"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="RFI-Xu-YjS" id="2Kb-Et-5uD"/>

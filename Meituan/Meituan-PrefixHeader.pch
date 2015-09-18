@@ -12,4 +12,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
+typedef void (^requestFinishedCompletionBlock)(id);
+
 #endif

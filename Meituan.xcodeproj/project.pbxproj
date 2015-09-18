@@ -29,6 +29,8 @@
 		40D7B8C01BAB95D50011AAB2 /* NSURL+MeituanImageURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D7B8BF1BAB95D50011AAB2 /* NSURL+MeituanImageURL.m */; };
 		40D7B8C71BAB99D30011AAB2 /* UIView+CornerMaskLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D7B8C61BAB99D30011AAB2 /* UIView+CornerMaskLayer.m */; };
 		40D7B8CA1BAB9AB10011AAB2 /* UIView+AddHorizontalLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D7B8C91BAB9AB10011AAB2 /* UIView+AddHorizontalLine.m */; };
+		40D7B8D11BABEB190011AAB2 /* MeituanActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D7B8D01BABEB190011AAB2 /* MeituanActivity.m */; };
+		40D7B8D41BABEB870011AAB2 /* MeituanActivity+request.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D7B8D31BABEB870011AAB2 /* MeituanActivity+request.m */; };
 		40D92E7A1BA8FC5C0011995A /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D92E791BA8FC5C0011995A /* UIColor+HexColor.m */; };
 		40D92E831BA900070011995A /* icon_pull_animation_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D92E7E1BA900070011995A /* icon_pull_animation_1@2x.png */; };
 		40D92E841BA900070011995A /* icon_pull_animation_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D92E7F1BA900070011995A /* icon_pull_animation_2@2x.png */; };
@@ -109,6 +111,10 @@
 		40D7B8C61BAB99D30011AAB2 /* UIView+CornerMaskLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerMaskLayer.m"; sourceTree = "<group>"; };
 		40D7B8C81BAB9AB10011AAB2 /* UIView+AddHorizontalLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AddHorizontalLine.h"; sourceTree = "<group>"; };
 		40D7B8C91BAB9AB10011AAB2 /* UIView+AddHorizontalLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AddHorizontalLine.m"; sourceTree = "<group>"; };
+		40D7B8CF1BABEB190011AAB2 /* MeituanActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeituanActivity.h; sourceTree = "<group>"; };
+		40D7B8D01BABEB190011AAB2 /* MeituanActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeituanActivity.m; sourceTree = "<group>"; };
+		40D7B8D21BABEB870011AAB2 /* MeituanActivity+request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MeituanActivity+request.h"; sourceTree = "<group>"; };
+		40D7B8D31BABEB870011AAB2 /* MeituanActivity+request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MeituanActivity+request.m"; sourceTree = "<group>"; };
 		40D92E781BA8FC5C0011995A /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
 		40D92E791BA8FC5C0011995A /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
 		40D92E7E1BA900070011995A /* icon_pull_animation_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_pull_animation_1@2x.png"; sourceTree = "<group>"; };
@@ -243,6 +249,8 @@
 			children = (
 				40D92EAA1BA954260011995A /* Seller.h */,
 				40D92EAB1BA954260011995A /* Seller.m */,
+				40D7B8CF1BABEB190011AAB2 /* MeituanActivity.h */,
+				40D7B8D01BABEB190011AAB2 /* MeituanActivity.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -383,6 +391,8 @@
 			children = (
 				40D92EB31BA957F00011995A /* Seller+request.h */,
 				40D92EB41BA957F00011995A /* Seller+request.m */,
+				40D7B8D21BABEB870011AAB2 /* MeituanActivity+request.h */,
+				40D7B8D31BABEB870011AAB2 /* MeituanActivity+request.m */,
 			);
 			name = HttpRequest;
 			sourceTree = "<group>";
@@ -562,6 +572,7 @@
 				40D92EA01BA905410011995A /* TopMenuViewController.m in Sources */,
 				40D92EB51BA957F00011995A /* Seller+request.m in Sources */,
 				406973CA1BA82939003C85C5 /* main.m in Sources */,
+				40D7B8D41BABEB870011AAB2 /* MeituanActivity+request.m in Sources */,
 				406974101BA84F3E003C85C5 /* MyProfileViewController.m in Sources */,
 				40D7B8CA1BAB9AB10011AAB2 /* UIView+AddHorizontalLine.m in Sources */,
 				40D92EAC1BA954260011995A /* Seller.m in Sources */,
@@ -572,6 +583,7 @@
 				40D7B8C71BAB99D30011AAB2 /* UIView+CornerMaskLayer.m in Sources */,
 				406974071BA84EDA003C85C5 /* BaseCollectionViewController.m in Sources */,
 				4069740A1BA84F00003C85C5 /* BaseTableViewController.m in Sources */,
+				40D7B8D11BABEB190011AAB2 /* MeituanActivity.m in Sources */,
 				40D7B8BB1BAB94330011AAB2 /* NSString+ImageURLWithWH.m in Sources */,
 				40D92EBE1BA993610011995A /* SellerTableViewCell.m in Sources */,
 				40D92E7A1BA8FC5C0011995A /* UIColor+HexColor.m in Sources */,

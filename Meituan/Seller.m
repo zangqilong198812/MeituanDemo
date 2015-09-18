@@ -32,8 +32,5 @@
                                                                            }];
 }
 
-+ (NSValueTransformer *)squareimgurlJSONTransformer{
-    return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
-}
 
 @end

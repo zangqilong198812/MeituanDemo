@@ -22,6 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UITabBarItem *item = self.tabBarController.tabBar.items[2];
+    [item setSelectedImage:[UIImage imageNamed:@"icon_tabbar_merchant_selected"]];
+    
     [self shouldAddPullToRefresh:YES];
     // Do any additional setup after loading the view.
 }

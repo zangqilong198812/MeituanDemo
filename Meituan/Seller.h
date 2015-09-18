@@ -14,10 +14,10 @@
 @property (nonatomic, copy, readonly) NSString *mname;
 @property (nonatomic, copy, readonly) NSString *title;
 @property (nonatomic, copy, readonly) NSString *range;
-@property (nonatomic, assign, readonly) NSNumber *price;
-@property (nonatomic, assign, readonly) NSNumber *value;
+@property (nonatomic, strong, readonly) NSNumber *price;
+@property (nonatomic, strong, readonly) NSNumber *value;
 @property (nonatomic, strong, readonly) NSNumber *nobooking;
 @property (nonatomic, strong, readonly) NSNumber *solds;
-@property (nonatomic, strong, readonly) NSURL *squareimgurl;
+@property (nonatomic, copy, readonly) NSString *squareimgurl;
 
 @end

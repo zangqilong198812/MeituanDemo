@@ -28,6 +28,9 @@ static NSString * const kSellerTableViewCellID = @"kSellerTableViewCellID";
     
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithHex:@"#06C1AE"]];
     
+    UITabBarItem *item = self.tabBarController.tabBar.items[0];
+    [item setSelectedImage:[UIImage imageNamed:@"icon_tabbar_homepage_selected"]];
+    
     self.shouldInitPullToRefresh = YES;
     [Seller requestSellerWithCompletion:^(id object) {
         sellerArray = (NSArray *)object;
@@ -66,7 +69,7 @@ static NSString * const kSellerTableViewCellID = @"kSellerTableViewCellID";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 75.0f;
+    return 100.0f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

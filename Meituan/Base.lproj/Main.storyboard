@@ -31,7 +31,7 @@
         <scene sceneID="jhS-1W-lcI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7ji-Tc-Htf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="团购" image="icon_tabbar_homepage" selectedImage="icon_tabbar_homepage_selected" id="V7d-t2-ptr"/>
+                    <tabBarItem key="tabBarItem" title="团购" image="icon_tabbar_homepage" id="V7d-t2-ptr"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -64,22 +64,22 @@
                             </connections>
                         </containerView>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="kSellerTableViewCellID" rowHeight="70" id="nIC-Ob-ffh" customClass="SellerTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="kSellerTableViewCellID" rowHeight="100" id="nIC-Ob-ffh" customClass="SellerTableViewCell">
                                 <rect key="frame" x="0.0" y="210" width="600" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nIC-Ob-ffh" id="ZB6-qu-1ke">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fgd-bY-HhZ">
-                                            <rect key="frame" x="8" y="5" width="60" height="60"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fgd-bY-HhZ">
+                                            <rect key="frame" x="8" y="8" width="84" height="84"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="60" id="2dx-Ma-YHF"/>
-                                                <constraint firstAttribute="width" constant="60" id="nTT-ri-Q43"/>
+                                                <constraint firstAttribute="height" constant="84" id="2dx-Ma-YHF"/>
+                                                <constraint firstAttribute="width" constant="84" id="nTT-ri-Q43"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dfsafsfdsafsadfsafsda " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFy-as-8Gz">
-                                            <rect key="frame" x="76" y="5" width="155" height="18"/>
+                                            <rect key="frame" x="100" y="5" width="155" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -91,19 +91,25 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMP-LQ-tMq">
-                                            <rect key="frame" x="76" y="27" width="514" height="16"/>
+                                            <rect key="frame" x="100" y="42" width="490" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDm-56-6BO">
-                                            <rect key="frame" x="554" y="46" width="38" height="18"/>
+                                            <rect key="frame" x="554" y="76" width="38" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEv-8J-dXs">
+                                            <rect key="frame" x="147" y="76" width="38" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0s-Fn-uxH">
-                                            <rect key="frame" x="76" y="46" width="39" height="18"/>
+                                            <rect key="frame" x="100" y="76" width="39" height="18"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                             <color key="textColor" red="0.36862745098039218" green="0.82745098039215681" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -111,6 +117,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="XMP-LQ-tMq" secondAttribute="trailing" constant="10" id="3sH-8g-nvm"/>
+                                        <constraint firstItem="dEv-8J-dXs" firstAttribute="leading" secondItem="w0s-Fn-uxH" secondAttribute="trailing" constant="8" id="Drw-XW-fvy"/>
                                         <constraint firstItem="w0s-Fn-uxH" firstAttribute="leading" secondItem="fgd-bY-HhZ" secondAttribute="trailing" constant="8" id="EEY-Gp-5aE"/>
                                         <constraint firstItem="UFy-as-8Gz" firstAttribute="top" secondItem="ZB6-qu-1ke" secondAttribute="top" constant="5" id="Fxm-U4-z9W"/>
                                         <constraint firstItem="UFy-as-8Gz" firstAttribute="leading" secondItem="fgd-bY-HhZ" secondAttribute="trailing" constant="8" id="Gwr-lv-cM8"/>
@@ -126,6 +133,7 @@
                                         <constraint firstAttribute="trailing" secondItem="JDm-56-6BO" secondAttribute="trailing" constant="8" id="jnx-dj-GlY"/>
                                         <constraint firstItem="9Qz-af-nfT" firstAttribute="leading" secondItem="UFy-as-8Gz" secondAttribute="trailing" priority="250" constant="10" id="lVd-Vc-lOI"/>
                                         <constraint firstAttribute="trailing" secondItem="9Qz-af-nfT" secondAttribute="trailing" constant="8" id="n6b-b4-0hJ"/>
+                                        <constraint firstItem="dEv-8J-dXs" firstAttribute="centerY" secondItem="w0s-Fn-uxH" secondAttribute="centerY" id="o2e-ec-zPh"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
@@ -141,6 +149,7 @@
                                     <outlet property="sellerNameLabel" destination="UFy-as-8Gz" id="T8t-Pe-FTH"/>
                                     <outlet property="sellerPriceLabel" destination="w0s-Fn-uxH" id="oUZ-BD-BSB"/>
                                     <outlet property="sellerSoldsLabel" destination="JDm-56-6BO" id="eoT-3v-nPc"/>
+                                    <outlet property="sellerValueLabel" destination="dEv-8J-dXs" id="0RE-pu-8cV"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="kCheckAllInfoCellID" rowHeight="70" id="lVy-9p-dgT" customClass="SellerTableViewCell">
@@ -514,7 +523,7 @@
         <scene sceneID="X9c-Vt-dIt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w6n-VU-RBp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="上门" image="icon_tabbar_onsite" selectedImage="icon_tabbar_onsite_selected" id="q6A-Em-aS7"/>
+                    <tabBarItem key="tabBarItem" title="上门" image="icon_tabbar_onsite" id="q6A-Em-aS7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yYh-Gl-Tcj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -533,7 +542,7 @@
         <scene sceneID="5x6-fc-7Tb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QJU-a7-1vU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="商家" image="icon_tabbar_merchant_normal" selectedImage="icon_tabbar_merchant_selected" id="kDN-Ce-Mi4"/>
+                    <tabBarItem key="tabBarItem" title="商家" image="icon_tabbar_merchant_normal" id="kDN-Ce-Mi4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XMZ-6V-h7Q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -581,7 +590,7 @@
         <scene sceneID="JSd-Tz-6Ab">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wDG-Nq-hTT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" image="icon_tabbar_mine" selectedImage="icon_tabbar_mine_selected" id="WCP-gQ-Xl2"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="icon_tabbar_mine" id="WCP-gQ-Xl2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jcd-nj-yAd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -600,7 +609,7 @@
         <scene sceneID="Ppv-Js-kpD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qtb-qn-L33" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="更多" image="icon_tabbar_misc" selectedImage="icon_tabbar_misc_selected" id="1GW-iK-Mf6"/>
+                    <tabBarItem key="tabBarItem" title="更多" image="icon_tabbar_misc" id="1GW-iK-Mf6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1HX-S6-rX0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -751,14 +760,9 @@
     <resources>
         <image name="icon_shake_animation_1.png" width="37" height="47"/>
         <image name="icon_tabbar_homepage" width="26" height="26"/>
-        <image name="icon_tabbar_homepage_selected" width="26" height="26"/>
         <image name="icon_tabbar_merchant_normal" width="26" height="26"/>
-        <image name="icon_tabbar_merchant_selected" width="26" height="26"/>
         <image name="icon_tabbar_mine" width="26" height="26"/>
-        <image name="icon_tabbar_mine_selected" width="26" height="26"/>
         <image name="icon_tabbar_misc" width="26" height="26"/>
-        <image name="icon_tabbar_misc_selected" width="26" height="26"/>
         <image name="icon_tabbar_onsite" width="26" height="26"/>
-        <image name="icon_tabbar_onsite_selected" width="26" height="26"/>
     </resources>
 </document>

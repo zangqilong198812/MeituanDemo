@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UITabBarItem *item = self.tabBarController.tabBar.items[3];
+    [item setSelectedImage:[UIImage imageNamed:@"icon_tabbar_mine_selected"]];
     // Do any additional setup after loading the view.
 }
 

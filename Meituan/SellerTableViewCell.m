@@ -8,7 +8,9 @@
 
 #import "SellerTableViewCell.h"
 #import "UIImageView+WebCache.h"
-
+#import "NSURL+MeituanImageURL.h"
+#import "UIView+CornerMaskLayer.h"
+#import "UIView+AddHorizontalLine.h"
 
 @interface SellerTableViewCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *sellerIconImageView;
@@ -17,13 +19,15 @@
 @property (weak, nonatomic) IBOutlet UILabel *sellerPriceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sellerContentLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sellerSoldsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *sellerValueLabel;
 
 @end
 
 @implementation SellerTableViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    [_sellerIconImageView addCornerMaskLayerWithRadius:3];
+    [_sellerValueLabel addHorizontalLineWithColor:_sellerValueLabel.textColor];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -34,11 +38,12 @@
 
 - (void)bindDataWithSeller:(Seller *)seller
 {
-    [_sellerIconImageView sd_setImageWithURL:seller.squareimgurl];
+    [_sellerIconImageView sd_setImageWithURL:[NSURL urlWithString:seller.squareimgurl AndImageSize:CGSizeMake(80, 80)]];
     _sellerNameLabel.text = seller.mname;
     _sellerContentLabel.text = seller.title;
-    //    _sellerPriceLabel.text = [NSString stringWithFormat:@"%ld",[seller.price integerValue]];
-    //    _sellerValueLabel.text = [NSString stringWithFormat:@"%ld",[seller.value integerValue]];
+    _sellerPriceLabel.text = [NSString stringWithFormat:@"%.1f", [seller.price floatValue]];
+    _sellerValueLabel.text = [NSString stringWithFormat:@"%.1f", [seller.value floatValue]];
+    _sellerSoldsLabel.text = [NSString stringWithFormat:@"已售%ld", [seller.solds integerValue]];
     
 }
 

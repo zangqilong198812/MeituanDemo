@@ -49,6 +49,7 @@
 - (void)setCustomUIApperance
 {
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:53.0/255 green:183.0/255 blue:178.0/255 alpha:1]];
 }
 
 @end

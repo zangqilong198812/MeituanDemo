@@ -24,6 +24,11 @@
 		40A568161BAAA81B00197EF9 /* VerticalButtonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A568151BAAA81B00197EF9 /* VerticalButtonCollectionViewCell.m */; };
 		40A568191BAABB3300197EF9 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A568181BAABB3300197EF9 /* LineView.m */; };
 		40A5681C1BAAD57000197EF9 /* FamousSellerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A5681B1BAAD57000197EF9 /* FamousSellerTableViewCell.m */; };
+		40D7B8BB1BAB94330011AAB2 /* NSString+ImageURLWithWH.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D7B8BA1BAB94330011AAB2 /* NSString+ImageURLWithWH.m */; };
+		40D7B8BD1BAB946C0011AAB2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D7B8BC1BAB946C0011AAB2 /* CoreGraphics.framework */; };
+		40D7B8C01BAB95D50011AAB2 /* NSURL+MeituanImageURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D7B8BF1BAB95D50011AAB2 /* NSURL+MeituanImageURL.m */; };
+		40D7B8C71BAB99D30011AAB2 /* UIView+CornerMaskLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D7B8C61BAB99D30011AAB2 /* UIView+CornerMaskLayer.m */; };
+		40D7B8CA1BAB9AB10011AAB2 /* UIView+AddHorizontalLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D7B8C91BAB9AB10011AAB2 /* UIView+AddHorizontalLine.m */; };
 		40D92E7A1BA8FC5C0011995A /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D92E791BA8FC5C0011995A /* UIColor+HexColor.m */; };
 		40D92E831BA900070011995A /* icon_pull_animation_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D92E7E1BA900070011995A /* icon_pull_animation_1@2x.png */; };
 		40D92E841BA900070011995A /* icon_pull_animation_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D92E7F1BA900070011995A /* icon_pull_animation_2@2x.png */; };
@@ -38,7 +43,6 @@
 		40D92E951BA900190011995A /* icon_shake_animation_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D92E8D1BA900190011995A /* icon_shake_animation_6@2x.png */; };
 		40D92E961BA900190011995A /* icon_shake_animation_7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D92E8E1BA900190011995A /* icon_shake_animation_7@2x.png */; };
 		40D92E971BA900190011995A /* icon_shake_animation_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D92E8F1BA900190011995A /* icon_shake_animation_8@2x.png */; };
-		40D92E9A1BA9048C0011995A /* PriceLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D92E991BA9048C0011995A /* PriceLabel.m */; };
 		40D92EA01BA905410011995A /* TopMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D92E9F1BA905410011995A /* TopMenuViewController.m */; };
 		40D92EA31BA9068A0011995A /* ChildCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D92EA21BA9068A0011995A /* ChildCategoryViewController.m */; };
 		40D92EA61BA91EF50011995A /* UIButton+VerticalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D92EA51BA91EF50011995A /* UIButton+VerticalLayout.m */; };
@@ -95,6 +99,16 @@
 		40A568181BAABB3300197EF9 /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
 		40A5681A1BAAD57000197EF9 /* FamousSellerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamousSellerTableViewCell.h; sourceTree = "<group>"; };
 		40A5681B1BAAD57000197EF9 /* FamousSellerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamousSellerTableViewCell.m; sourceTree = "<group>"; };
+		40D7B8B91BAB94330011AAB2 /* NSString+ImageURLWithWH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ImageURLWithWH.h"; sourceTree = "<group>"; };
+		40D7B8BA1BAB94330011AAB2 /* NSString+ImageURLWithWH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ImageURLWithWH.m"; sourceTree = "<group>"; };
+		40D7B8BC1BAB946C0011AAB2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		40D7B8BE1BAB95D50011AAB2 /* NSURL+MeituanImageURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+MeituanImageURL.h"; sourceTree = "<group>"; };
+		40D7B8BF1BAB95D50011AAB2 /* NSURL+MeituanImageURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+MeituanImageURL.m"; sourceTree = "<group>"; };
+		40D7B8C11BAB963C0011AAB2 /* Meituan-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Meituan-PrefixHeader.pch"; sourceTree = "<group>"; };
+		40D7B8C51BAB99D30011AAB2 /* UIView+CornerMaskLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerMaskLayer.h"; sourceTree = "<group>"; };
+		40D7B8C61BAB99D30011AAB2 /* UIView+CornerMaskLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerMaskLayer.m"; sourceTree = "<group>"; };
+		40D7B8C81BAB9AB10011AAB2 /* UIView+AddHorizontalLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AddHorizontalLine.h"; sourceTree = "<group>"; };
+		40D7B8C91BAB9AB10011AAB2 /* UIView+AddHorizontalLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AddHorizontalLine.m"; sourceTree = "<group>"; };
 		40D92E781BA8FC5C0011995A /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
 		40D92E791BA8FC5C0011995A /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
 		40D92E7E1BA900070011995A /* icon_pull_animation_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_pull_animation_1@2x.png"; sourceTree = "<group>"; };
@@ -110,8 +124,6 @@
 		40D92E8D1BA900190011995A /* icon_shake_animation_6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_shake_animation_6@2x.png"; sourceTree = "<group>"; };
 		40D92E8E1BA900190011995A /* icon_shake_animation_7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_shake_animation_7@2x.png"; sourceTree = "<group>"; };
 		40D92E8F1BA900190011995A /* icon_shake_animation_8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_shake_animation_8@2x.png"; sourceTree = "<group>"; };
-		40D92E981BA9048C0011995A /* PriceLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceLabel.h; sourceTree = "<group>"; };
-		40D92E991BA9048C0011995A /* PriceLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceLabel.m; sourceTree = "<group>"; };
 		40D92E9E1BA905410011995A /* TopMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMenuViewController.h; sourceTree = "<group>"; };
 		40D92E9F1BA905410011995A /* TopMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMenuViewController.m; sourceTree = "<group>"; };
 		40D92EA11BA9068A0011995A /* ChildCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildCategoryViewController.h; sourceTree = "<group>"; };
@@ -136,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40D7B8BD1BAB946C0011AAB2 /* CoreGraphics.framework in Frameworks */,
 				E47B8D0C2C9C11632EFD85DC /* libPods-Meituan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +207,7 @@
 			children = (
 				406973C81BA82939003C85C5 /* Info.plist */,
 				406973C91BA82939003C85C5 /* main.m */,
+				40D7B8C11BAB963C0011AAB2 /* Meituan-PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -239,8 +253,6 @@
 				40A568131BAAA80100197EF9 /* CollectionViewCell */,
 				40A568121BAAA7FB00197EF9 /* TableViewCell */,
 				40A568111BAAA7F000197EF9 /* ChildViewController */,
-				40D92E981BA9048C0011995A /* PriceLabel.h */,
-				40D92E991BA9048C0011995A /* PriceLabel.m */,
 				40A568171BAABB3300197EF9 /* LineView.h */,
 				40A568181BAABB3300197EF9 /* LineView.m */,
 			);
@@ -254,6 +266,14 @@
 				40D92E791BA8FC5C0011995A /* UIColor+HexColor.m */,
 				40D92EA41BA91EF50011995A /* UIButton+VerticalLayout.h */,
 				40D92EA51BA91EF50011995A /* UIButton+VerticalLayout.m */,
+				40D7B8B91BAB94330011AAB2 /* NSString+ImageURLWithWH.h */,
+				40D7B8BA1BAB94330011AAB2 /* NSString+ImageURLWithWH.m */,
+				40D7B8BE1BAB95D50011AAB2 /* NSURL+MeituanImageURL.h */,
+				40D7B8BF1BAB95D50011AAB2 /* NSURL+MeituanImageURL.m */,
+				40D7B8C51BAB99D30011AAB2 /* UIView+CornerMaskLayer.h */,
+				40D7B8C61BAB99D30011AAB2 /* UIView+CornerMaskLayer.m */,
+				40D7B8C81BAB9AB10011AAB2 /* UIView+AddHorizontalLine.h */,
+				40D7B8C91BAB9AB10011AAB2 /* UIView+AddHorizontalLine.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -370,6 +390,7 @@
 		7DA61C9896DC676779AECE53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				40D7B8BC1BAB946C0011AAB2 /* CoreGraphics.framework */,
 				0CB6F480B2F236415FABD900 /* libPods-Meituan.a */,
 			);
 			name = Frameworks;
@@ -542,13 +563,16 @@
 				40D92EB51BA957F00011995A /* Seller+request.m in Sources */,
 				406973CA1BA82939003C85C5 /* main.m in Sources */,
 				406974101BA84F3E003C85C5 /* MyProfileViewController.m in Sources */,
+				40D7B8CA1BAB9AB10011AAB2 /* UIView+AddHorizontalLine.m in Sources */,
 				40D92EAC1BA954260011995A /* Seller.m in Sources */,
+				40D7B8C01BAB95D50011AAB2 /* NSURL+MeituanImageURL.m in Sources */,
 				406973FF1BA84D45003C85C5 /* GroupPurchaseViewController.m in Sources */,
 				40D92EA31BA9068A0011995A /* ChildCategoryViewController.m in Sources */,
-				40D92E9A1BA9048C0011995A /* PriceLabel.m in Sources */,
 				406974131BA84F47003C85C5 /* MoreViewController.m in Sources */,
+				40D7B8C71BAB99D30011AAB2 /* UIView+CornerMaskLayer.m in Sources */,
 				406974071BA84EDA003C85C5 /* BaseCollectionViewController.m in Sources */,
 				4069740A1BA84F00003C85C5 /* BaseTableViewController.m in Sources */,
+				40D7B8BB1BAB94330011AAB2 /* NSString+ImageURLWithWH.m in Sources */,
 				40D92EBE1BA993610011995A /* SellerTableViewCell.m in Sources */,
 				40D92E7A1BA8FC5C0011995A /* UIColor+HexColor.m in Sources */,
 				406974031BA84EBB003C85C5 /* DoorToDoorViewController.m in Sources */,
@@ -683,6 +707,7 @@
 			baseConfigurationReference = 53A364E2149F261D65C16AC6 /* Pods-Meituan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "${SRCROOT}/Meituan/Meituan-PrefixHeader.pch";
 				INFOPLIST_FILE = Meituan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -695,6 +720,7 @@
 			baseConfigurationReference = B8A0949B69D81C418746E6C4 /* Pods-Meituan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "${SRCROOT}/Meituan/Meituan-PrefixHeader.pch";
 				INFOPLIST_FILE = Meituan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

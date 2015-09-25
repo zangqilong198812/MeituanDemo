@@ -12,12 +12,17 @@
 #import "SellerTableViewCell.h"
 #import "LineView.h"
 #import <AFNetworking.h>
+#import "PanicBuying+request.h"
+#import "FamousSellerTableViewCell.h"
 
 static NSString * const kSellerTableViewCellID = @"kSellerTableViewCellID";
+static NSString * const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCellID";
 
 @interface GroupPurchaseViewController ()<UITableViewDataSource, UITableViewDelegate>
 {
     NSArray *sellerArray;
+    NSArray *panicBuyingArray;
+    
     AFHTTPRequestOperation *operation;
 }
 
@@ -28,34 +33,33 @@ static NSString * const kSellerTableViewCellID = @"kSellerTableViewCellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSLog(@"%@",@"Hello world(这是一段高难度代码。能看懂的人很少)");
+    
+    sellerArray = [NSArray new];
+    
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithHex:@"#06C1AE"]];
     
     UITabBarItem *item = self.tabBarController.tabBar.items[0];
     [item setSelectedImage:[UIImage imageNamed:@"icon_tabbar_homepage_selected"]];
     
-    self.shouldInitPullToRefresh = YES;
-//    [Seller requestSellerWithCompletion:^(id object) {
-//        sellerArray = (NSArray *)object;
-//        [self.tableView reloadData];
-//    }];
-    //        if (operation) {
-    //            [operation cancel];
-    //        }
-    for (int i = 1; i <= 10; i++) {
-
-        if (operation) {
-            [operation cancel];
-        }
-      operation = [Seller requestSellerWithCompletion:^(id object) {
-            NSLog(@"finished download %d",i);
-            
-        }];
+    [self shouldAddPullToRefresh:YES];
+    
+    [Seller requestSellerWithCompletion:^(id object) {
+        sellerArray = (NSArray *)object;
+        [self.tableView reloadData];
+    } FailedBlock:^(NSError *error) {
         
-    }
+    }];
+
     
+   
+//    [PanicBuying requestPanicBuyingWithCompletion:^(id object) {
+//        panicBuyingArray = (NSArray *)object;
+//        [self.tableView reloadData];
+//    } FailedBlock:^(NSError *error) {
+//        
+//    }];
     
-  
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -67,28 +71,46 @@ static NSString * const kSellerTableViewCellID = @"kSellerTableViewCellID";
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return sellerArray.count;
+    if (section == 0) {
+        return sellerArray.count;
+    }else
+    {
+        return 1;
+    }
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    SellerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kSellerTableViewCellID];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    Seller *seller = sellerArray[indexPath.row];
+    if (indexPath.section == 0) {
+        SellerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kSellerTableViewCellID];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        Seller *seller = sellerArray[indexPath.row];
+        
+        [cell bindDataWithSeller:seller];
+        
+        return cell;
+    }else{
+        FamousSellerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kPanicBuyingTableViewCellID];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        [cell bindDataWithPanicBuying:panicBuyingArray];
+        return cell;
+    }
     
-    [cell bindDataWithSeller:seller];
     
-    return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 100.0f;
+    if (indexPath.section == 0) {
+        return 100;
+    }
+    return 110.0f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

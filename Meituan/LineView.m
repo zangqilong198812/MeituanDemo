@@ -19,7 +19,7 @@ static NSString * const kLineHexColor = @"#D7D7D7";
         
         CALayer *layer = [CALayer layer];
         layer.backgroundColor = [UIColor colorWithHex:kLineHexColor].CGColor;
-        layer.frame = CGRectMake(0, 0, CGRectGetWidth(self.bounds), 1);
+        layer.frame = CGRectMake(0, 0, CGRectGetWidth(self.bounds), .5);
         [self.layer addSublayer:layer];
     }
     
@@ -27,7 +27,7 @@ static NSString * const kLineHexColor = @"#D7D7D7";
         
         CALayer *layer = [CALayer layer];
         layer.backgroundColor = [UIColor colorWithHex:kLineHexColor].CGColor;
-        layer.frame = CGRectMake(0, 0, 1, CGRectGetHeight(self.bounds));
+        layer.frame = CGRectMake(0, 0, .5, CGRectGetHeight(self.bounds));
         [self.layer addSublayer:layer];
     }
     
@@ -35,7 +35,7 @@ static NSString * const kLineHexColor = @"#D7D7D7";
         
         CALayer *layer = [CALayer layer];
         layer.backgroundColor = [UIColor colorWithHex:kLineHexColor].CGColor;
-        layer.frame = CGRectMake(0, CGRectGetHeight(self.bounds), CGRectGetWidth(self.bounds), 1);
+        layer.frame = CGRectMake(0, CGRectGetHeight(self.bounds), CGRectGetWidth(self.bounds), .5);
         [self.layer addSublayer:layer];
     }
     
@@ -43,7 +43,7 @@ static NSString * const kLineHexColor = @"#D7D7D7";
         
         CALayer *layer = [CALayer layer];
         layer.backgroundColor = [UIColor colorWithHex:kLineHexColor].CGColor;
-        layer.frame = CGRectMake(CGRectGetWidth(self.bounds), 0, 1, CGRectGetHeight(self.bounds));
+        layer.frame = CGRectMake(CGRectGetWidth(self.bounds), 0, .5, CGRectGetHeight(self.bounds));
         [self.layer addSublayer:layer];
     }
     

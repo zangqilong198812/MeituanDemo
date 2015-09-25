@@ -13,7 +13,7 @@ static NSString * const kRequestSellerURL = @"http://api.meituan.com/group/v1/re
 
 @implementation Seller (request)
 
-+ (AFHTTPRequestOperation *)requestSellerWithCompletion:(requestFinishedCompletionBlock)successBlock
++ (AFHTTPRequestOperation *)requestSellerWithCompletion:(requestFinishedCompletionBlock)successBlock FailedBlock:(requestFailedBlock)failedBlock
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager.operationQueue setMaxConcurrentOperationCount:1];
@@ -31,7 +31,7 @@ static NSString * const kRequestSellerURL = @"http://api.meituan.com/group/v1/re
         
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
+        failedBlock(error);
     }];
     
     return operation;

@@ -24,6 +24,8 @@
 		40A568161BAAA81B00197EF9 /* VerticalButtonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A568151BAAA81B00197EF9 /* VerticalButtonCollectionViewCell.m */; };
 		40A568191BAABB3300197EF9 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A568181BAABB3300197EF9 /* LineView.m */; };
 		40A5681C1BAAD57000197EF9 /* FamousSellerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A5681B1BAAD57000197EF9 /* FamousSellerTableViewCell.m */; };
+		40D5A3F41BAF5BF9004EB80D /* PanicBuying.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D5A3F31BAF5BF9004EB80D /* PanicBuying.m */; settings = {ASSET_TAGS = (); }; };
+		40D5A3F71BAF5D71004EB80D /* PanicBuying+request.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D5A3F61BAF5D71004EB80D /* PanicBuying+request.m */; settings = {ASSET_TAGS = (); }; };
 		40D7B8BB1BAB94330011AAB2 /* NSString+ImageURLWithWH.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D7B8BA1BAB94330011AAB2 /* NSString+ImageURLWithWH.m */; };
 		40D7B8BD1BAB946C0011AAB2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D7B8BC1BAB946C0011AAB2 /* CoreGraphics.framework */; };
 		40D7B8C01BAB95D50011AAB2 /* NSURL+MeituanImageURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D7B8BF1BAB95D50011AAB2 /* NSURL+MeituanImageURL.m */; };
@@ -101,6 +103,10 @@
 		40A568181BAABB3300197EF9 /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
 		40A5681A1BAAD57000197EF9 /* FamousSellerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamousSellerTableViewCell.h; sourceTree = "<group>"; };
 		40A5681B1BAAD57000197EF9 /* FamousSellerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamousSellerTableViewCell.m; sourceTree = "<group>"; };
+		40D5A3F21BAF5BF9004EB80D /* PanicBuying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanicBuying.h; sourceTree = "<group>"; };
+		40D5A3F31BAF5BF9004EB80D /* PanicBuying.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanicBuying.m; sourceTree = "<group>"; };
+		40D5A3F51BAF5D71004EB80D /* PanicBuying+request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PanicBuying+request.h"; sourceTree = "<group>"; };
+		40D5A3F61BAF5D71004EB80D /* PanicBuying+request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PanicBuying+request.m"; sourceTree = "<group>"; };
 		40D7B8B91BAB94330011AAB2 /* NSString+ImageURLWithWH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ImageURLWithWH.h"; sourceTree = "<group>"; };
 		40D7B8BA1BAB94330011AAB2 /* NSString+ImageURLWithWH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ImageURLWithWH.m"; sourceTree = "<group>"; };
 		40D7B8BC1BAB946C0011AAB2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -249,6 +255,8 @@
 			children = (
 				40D92EAA1BA954260011995A /* Seller.h */,
 				40D92EAB1BA954260011995A /* Seller.m */,
+				40D5A3F21BAF5BF9004EB80D /* PanicBuying.h */,
+				40D5A3F31BAF5BF9004EB80D /* PanicBuying.m */,
 				40D7B8CF1BABEB190011AAB2 /* MeituanActivity.h */,
 				40D7B8D01BABEB190011AAB2 /* MeituanActivity.m */,
 			);
@@ -393,6 +401,8 @@
 				40D92EB41BA957F00011995A /* Seller+request.m */,
 				40D7B8D21BABEB870011AAB2 /* MeituanActivity+request.h */,
 				40D7B8D31BABEB870011AAB2 /* MeituanActivity+request.m */,
+				40D5A3F51BAF5D71004EB80D /* PanicBuying+request.h */,
+				40D5A3F61BAF5D71004EB80D /* PanicBuying+request.m */,
 			);
 			name = HttpRequest;
 			sourceTree = "<group>";
@@ -589,7 +599,9 @@
 				40D92E7A1BA8FC5C0011995A /* UIColor+HexColor.m in Sources */,
 				406974031BA84EBB003C85C5 /* DoorToDoorViewController.m in Sources */,
 				40D92EBB1BA96C600011995A /* BaseTabBarViewController.m in Sources */,
+				40D5A3F41BAF5BF9004EB80D /* PanicBuying.m in Sources */,
 				4069740D1BA84F2E003C85C5 /* SellerViewController.m in Sources */,
+				40D5A3F71BAF5D71004EB80D /* PanicBuying+request.m in Sources */,
 				40D92EA61BA91EF50011995A /* UIButton+VerticalLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

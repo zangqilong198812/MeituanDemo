@@ -10,4 +10,6 @@
 
 @interface FamousSellerTableViewCell : UITableViewCell
 
+- (void)bindDataWithPanicBuying:(NSArray *)panicModelArray;
+
 @end

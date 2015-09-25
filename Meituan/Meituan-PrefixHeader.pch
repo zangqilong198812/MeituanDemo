@@ -13,5 +13,6 @@
 #import <CoreGraphics/CoreGraphics.h>
 
 typedef void (^requestFinishedCompletionBlock)(id);
+typedef void (^requestFailedBlock)(NSError *error);
 
 #endif

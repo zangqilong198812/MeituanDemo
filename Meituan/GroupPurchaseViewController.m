@@ -33,8 +33,6 @@ static NSString * const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCel
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"%@",@"Hello world(这是一段高难度代码。能看懂的人很少)");
-    
     sellerArray = [NSArray new];
     
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithHex:@"#06C1AE"]];

@@ -9,6 +9,7 @@
 #import "Seller.h"
 #import "AFNetworking.h"
 
+
 @interface Seller (request)
 
 + (AFHTTPRequestOperation *)requestSellerWithCompletion:(requestFinishedCompletionBlock)successBlock FailedBlock:(requestFailedBlock)failedBlock;

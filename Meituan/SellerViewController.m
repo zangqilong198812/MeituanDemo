@@ -9,32 +9,34 @@
 #import "SellerViewController.h"
 #import <MJRefresh.h>
 
-@interface SellerViewController ()
-{
+
+@interface SellerViewController () {
     NSMutableArray *pullAnimationImages;
     NSMutableArray *shakeAnimationImages;
 }
 
 @end
 
+
 @implementation SellerViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     UITabBarItem *item = self.tabBarController.tabBar.items[2];
     [item setSelectedImage:[UIImage imageNamed:@"icon_tabbar_merchant_selected"]];
-    
+
     [self shouldAddPullToRefresh:YES];
     // Do any additional setup after loading the view.
 }
 
 - (void)loadNewData
 {
-    
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

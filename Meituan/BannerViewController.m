@@ -9,34 +9,38 @@
 #import "BannerViewController.h"
 #import "VerticalButtonCollectionViewCell.h"
 
-static NSString * const kVerticalButtonCellID = @"kVerticalButtonCellID";
+static NSString *const kVerticalButtonCellID = @"kVerticalButtonCellID";
 
-@interface BannerViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+
+@interface BannerViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *bannerCollectionView;
 
 @end
 
+
 @implementation BannerViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - CollectionView DataSource && Delegate 
+#pragma mark - CollectionView DataSource && Delegate
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     VerticalButtonCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kVerticalButtonCellID forIndexPath:indexPath];
-    
-    [cell.verticalButton setTitle:[NSString stringWithFormat:@"%d",indexPath.row] forState:UIControlStateNormal];
-    
+
+    [cell.verticalButton setTitle:[NSString stringWithFormat:@"%d", indexPath.row] forState:UIControlStateNormal];
+
     return cell;
 }
 
@@ -47,7 +51,7 @@ static NSString * const kVerticalButtonCellID = @"kVerticalButtonCellID";
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake((CGRectGetWidth(_bannerCollectionView.bounds) - 24)/4, 67.5);
+    return CGSizeMake((CGRectGetWidth(_bannerCollectionView.bounds) - 24) / 4, 67.5);
 }
 
 /*

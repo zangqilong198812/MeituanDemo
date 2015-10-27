@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface BaseTableViewController : UITableViewController
 
 @property (nonatomic, assign) BOOL shouldInitPullToRefresh;

@@ -9,7 +9,8 @@
 #import "MTLModel.h"
 #import "MTLJSONAdapter.h"
 
-@interface Seller : MTLModel<MTLJSONSerializing>
+
+@interface Seller : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, copy, readonly) NSString *mname;
 @property (nonatomic, copy, readonly) NSString *title;

@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_OPTIONS(NSUInteger, LineViewType) {
-    LineViewTypeNone    = 0,
-    LineViewTypeTop     = 1,
-    LineViewTypeLeft    = 1<<1,
-    LineViewTypeBottom  = 1<<2,
-    LineViewTypeRight   = 1<<3
+    LineViewTypeNone = 0,
+    LineViewTypeTop = 1,
+    LineViewTypeLeft = 1 << 1,
+    LineViewTypeBottom = 1 << 2,
+    LineViewTypeRight = 1 << 3
 };
+
 
 @interface LineView : UIView
 

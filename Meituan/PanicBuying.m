@@ -8,16 +8,17 @@
 
 #import "PanicBuying.h"
 
+
 @implementation PanicBuying
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return @{
-             @"mdcLogoUrl":@"mdcLogoUrl",
-             @"price": @"price",
-             @"campaignprice":@"campaignprice"
-             
-             };
+        @"mdcLogoUrl" : @"mdcLogoUrl",
+        @"price" : @"price",
+        @"campaignprice" : @"campaignprice"
+
+    };
 }
 
 @end

@@ -15,54 +15,65 @@
 #import "PanicBuying+request.h"
 #import "FamousSellerTableViewCell.h"
 
-static NSString * const kSellerTableViewCellID = @"kSellerTableViewCellID";
-static NSString * const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCellID";
+static NSString *const kSellerTableViewCellID = @"kSellerTableViewCellID";
+static NSString *const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCellID";
 
-@interface GroupPurchaseViewController ()<UITableViewDataSource, UITableViewDelegate>
-{
+
+@interface GroupPurchaseViewController () <UITableViewDataSource, UITableViewDelegate> {
     NSArray *sellerArray;
     NSArray *panicBuyingArray;
-    
-    AFHTTPRequestOperation *operation;
 }
 
 @end
 
+
 @implementation GroupPurchaseViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     sellerArray = [NSArray new];
-    
+
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithHex:@"#06C1AE"]];
-    
+
     UITabBarItem *item = self.tabBarController.tabBar.items[0];
     [item setSelectedImage:[UIImage imageNamed:@"icon_tabbar_homepage_selected"]];
-    
+
     [self shouldAddPullToRefresh:YES];
-    
+
     [Seller requestSellerWithCompletion:^(id object) {
         sellerArray = (NSArray *)object;
         [self.tableView reloadData];
-    } FailedBlock:^(NSError *error) {
-        
+    } FailedBlock:^(NSError *error){
+
     }];
 
-    
-   
-//    [PanicBuying requestPanicBuyingWithCompletion:^(id object) {
-//        panicBuyingArray = (NSArray *)object;
-//        [self.tableView reloadData];
-//    } FailedBlock:^(NSError *error) {
-//        
-//    }];
-    
+
+    //    [PanicBuying requestPanicBuyingWithCompletion:^(id object) {
+    //        panicBuyingArray = (NSArray *)object;
+    //        [self.tableView reloadData];
+    //    } FailedBlock:^(NSError *error) {
+    //
+    //    }];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Pull To Refresh
+
+- (void)loadNewData
+{
+    [Seller requestSellerWithCompletion:^(id object) {
+        sellerArray = (NSArray *)object;
+        [self.tableView reloadData];
+    } FailedBlock:^(NSError *error){
+
+    }];
 }
 
 #pragma mark - TableView DataSource && Delegate
@@ -76,11 +87,9 @@ static NSString * const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCel
 {
     if (section == 0) {
         return sellerArray.count;
-    }else
-    {
+    } else {
         return 1;
     }
-    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -89,18 +98,16 @@ static NSString * const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCel
         SellerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kSellerTableViewCellID];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         Seller *seller = sellerArray[indexPath.row];
-        
+
         [cell bindDataWithSeller:seller];
-        
+
         return cell;
-    }else{
+    } else {
         FamousSellerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kPanicBuyingTableViewCellID];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         [cell bindDataWithPanicBuying:panicBuyingArray];
         return cell;
     }
-    
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

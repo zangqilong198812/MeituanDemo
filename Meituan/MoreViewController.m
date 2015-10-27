@@ -8,19 +8,23 @@
 
 #import "MoreViewController.h"
 
+
 @interface MoreViewController ()
 
 @end
 
+
 @implementation MoreViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     UITabBarItem *item = self.tabBarController.tabBar.items[4];
     [item setSelectedImage:[UIImage imageNamed:@"icon_tabbar_misc_selected"]];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

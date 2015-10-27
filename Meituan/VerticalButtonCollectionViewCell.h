@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface VerticalButtonCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIButton *verticalButton;
 

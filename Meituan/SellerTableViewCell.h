@@ -10,6 +10,7 @@
 #import "Seller.h"
 #import "MCSwipeTableViewCell.h"
 
+
 @interface SellerTableViewCell : MCSwipeTableViewCell
 
 - (void)bindDataWithSeller:(Seller *)seller;

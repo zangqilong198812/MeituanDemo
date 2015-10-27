@@ -8,21 +8,25 @@
 
 #import "MyProfileViewController.h"
 
+
 @interface MyProfileViewController ()
 
 @end
 
+
 @implementation MyProfileViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     UITabBarItem *item = self.tabBarController.tabBar.items[3];
     [item setSelectedImage:[UIImage imageNamed:@"icon_tabbar_mine_selected"]];
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

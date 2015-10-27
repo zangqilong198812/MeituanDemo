@@ -12,6 +12,7 @@
 #import "UIView+CornerMaskLayer.h"
 #import "UIView+AddHorizontalLine.h"
 
+
 @interface SellerTableViewCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *sellerIconImageView;
 @property (weak, nonatomic) IBOutlet UILabel *sellerNameLabel;
@@ -23,14 +24,17 @@
 
 @end
 
+
 @implementation SellerTableViewCell
 
-- (void)awakeFromNib {
+- (void)awakeFromNib
+{
     [_sellerIconImageView addCornerMaskLayerWithRadius:3];
     [_sellerValueLabel addHorizontalLineWithColor:_sellerValueLabel.textColor];
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
     [super setSelected:selected animated:animated];
 }
 
@@ -42,7 +46,6 @@
     _sellerPriceLabel.text = [NSString stringWithFormat:@"%.1f", [seller.price floatValue]];
     _sellerValueLabel.text = [NSString stringWithFormat:@"%.1f", [seller.value floatValue]];
     _sellerSoldsLabel.text = [NSString stringWithFormat:@"已售%ld", [seller.solds integerValue]];
-    
 }
 
 @end

@@ -8,6 +8,7 @@
 
 #import "PanicBuying.h"
 
+
 @interface PanicBuying (request)
 
 + (void)requestPanicBuyingWithCompletion:(requestFinishedCompletionBlock)successBlock FailedBlock:(requestFailedBlock)failedBlock;

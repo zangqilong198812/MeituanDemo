@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface NSURL (MeituanImageURL)
 
 + (NSURL *)urlWithString:(NSString *)urlPath AndImageSize:(CGSize)size;

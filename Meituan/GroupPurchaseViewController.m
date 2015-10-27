@@ -43,8 +43,8 @@ static NSString *const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCell
     [self shouldAddPullToRefresh:YES];
 
     [Seller requestSellerWithCompletion:^(id object) {
-        sellerArray = (NSArray *)object;
-        [self.tableView reloadData];
+      sellerArray = (NSArray *)object;
+      [self.tableView reloadData];
     } FailedBlock:^(NSError *error){
 
     }];
@@ -56,9 +56,9 @@ static NSString *const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCell
     //    } FailedBlock:^(NSError *error) {
     //
     //    }];
-    if (YES) {
-        NSLog(@"haah");
-    }
+
+    if (true)
+        NSLog(@"haha");
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,8 +72,8 @@ static NSString *const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCell
 - (void)loadNewData
 {
     [Seller requestSellerWithCompletion:^(id object) {
-        sellerArray = (NSArray *)object;
-        [self.tableView reloadData];
+      sellerArray = (NSArray *)object;
+      [self.tableView reloadData];
     } FailedBlock:^(NSError *error){
 
     }];
@@ -81,10 +81,7 @@ static NSString *const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCell
 
 #pragma mark - TableView DataSource && Delegate
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 2;
-}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView { return 2; }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -121,14 +118,12 @@ static NSString *const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCell
     return 110.0f;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 35;
-}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section { return 35; }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    LineView *headerView = [[LineView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 30)];
+    LineView *headerView =
+        [[LineView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 30)];
     [headerView addLineWithLineType:LineViewTypeTop];
     UILabel *likeLabel = [[UILabel alloc] initWithFrame:CGRectMake(12, 0, 100, 35)];
     likeLabel.text = @"猜你喜欢";

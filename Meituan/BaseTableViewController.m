@@ -26,8 +26,23 @@
     pullAnimationImages = [NSMutableArray array];
     shakeAnimationImages = [NSMutableArray array];
 
-    NSArray *pullAnimationName = @[ @"icon_pull_animation_1", @"icon_pull_animation_2", @"icon_pull_animation_3", @"icon_pull_animation_4", @"icon_pull_animation_5" ];
-    NSArray *shakeAnimationName = @[ @"icon_shake_animation_1", @"icon_shake_animation_2", @"icon_shake_animation_3", @"icon_shake_animation_4", @"icon_shake_animation_5", @"icon_shake_animation_6", @"icon_shake_animation_7", @"icon_shake_animation_8" ];
+    NSArray *pullAnimationName = @[
+        @"icon_pull_animation_1",
+        @"icon_pull_animation_2",
+        @"icon_pull_animation_3",
+        @"icon_pull_animation_4",
+        @"icon_pull_animation_5"
+    ];
+    NSArray *shakeAnimationName = @[
+        @"icon_shake_animation_1",
+        @"icon_shake_animation_2",
+        @"icon_shake_animation_3",
+        @"icon_shake_animation_4",
+        @"icon_shake_animation_5",
+        @"icon_shake_animation_6",
+        @"icon_shake_animation_7",
+        @"icon_shake_animation_8"
+    ];
     for (NSString *str in pullAnimationName) {
         UIImage *image = [UIImage imageNamed:str];
         [pullAnimationImages addObject:image];
@@ -44,7 +59,8 @@
 - (void)shouldAddPullToRefresh:(BOOL)isAdd
 {
     if (isAdd) {
-        MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+        MJRefreshGifHeader *header =
+            [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
         // 设置普通状态的动画图片
         [header setImages:@[ [UIImage imageNamed:@"icon_transform_animation"] ] forState:MJRefreshStateIdle];
         // 设置即将刷新状态的动画图片（一松开就会刷新的状态）
@@ -61,9 +77,7 @@
     }
 }
 
-- (void)loadNewData
-{
-}
+- (void)loadNewData {}
 
 - (void)didReceiveMemoryWarning
 {
@@ -90,9 +104,9 @@
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
+
     // Configure the cell...
-    
+
     return cell;
 }
 */
@@ -107,19 +121,21 @@
 
 /*
 // Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
 }
 */
 
 /*
 // Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath
+*)toIndexPath {
 }
 */
 

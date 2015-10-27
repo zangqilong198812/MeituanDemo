@@ -12,6 +12,7 @@
 
 @interface Seller (request)
 
-+ (AFHTTPRequestOperation *)requestSellerWithCompletion:(requestFinishedCompletionBlock)successBlock FailedBlock:(requestFailedBlock)failedBlock;
++ (AFHTTPRequestOperation *)requestSellerWithCompletion:(requestFinishedCompletionBlock)successBlock
+                                            FailedBlock:(requestFailedBlock)failedBlock;
 
 @end

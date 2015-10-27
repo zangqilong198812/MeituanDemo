@@ -11,6 +11,7 @@
 
 @interface PanicBuying (request)
 
-+ (void)requestPanicBuyingWithCompletion:(requestFinishedCompletionBlock)successBlock FailedBlock:(requestFailedBlock)failedBlock;
++ (void)requestPanicBuyingWithCompletion:(requestFinishedCompletionBlock)successBlock
+                             FailedBlock:(requestFailedBlock)failedBlock;
 
 @end

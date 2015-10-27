@@ -50,19 +50,22 @@
             PanicBuying *panic = panicModelArray[i];
             if (i == 0) {
                 [_leftSellerLogoImageView sd_setImageWithURL:[NSURL URLWithString:panic.mdcLogoUrl]];
-                _leftSellerPriceLabel.text = [NSString stringWithFormat:@"%ld", (long)[panic.campaignprice integerValue]];
+                _leftSellerPriceLabel.text =
+                    [NSString stringWithFormat:@"%ld", (long)[panic.campaignprice integerValue]];
                 _leftSelllerValueLabel.text = [NSString stringWithFormat:@"%ld", (long)[panic.price integerValue]];
             }
 
             if (i == 1) {
                 [_centerSellerLogoImageView sd_setImageWithURL:[NSURL URLWithString:panic.mdcLogoUrl]];
-                _centerSellerPriceLabel.text = [NSString stringWithFormat:@"%ld", (long)[panic.campaignprice integerValue]];
+                _centerSellerPriceLabel.text =
+                    [NSString stringWithFormat:@"%ld", (long)[panic.campaignprice integerValue]];
                 _centerSellerValueLabel.text = [NSString stringWithFormat:@"%ld", (long)[panic.price integerValue]];
             }
 
             if (i == 2) {
                 [_rightSellerLogoImageView sd_setImageWithURL:[NSURL URLWithString:panic.mdcLogoUrl]];
-                _rightSellerPriceLabel.text = [NSString stringWithFormat:@"%ld", (long)[panic.campaignprice integerValue]];
+                _rightSellerPriceLabel.text =
+                    [NSString stringWithFormat:@"%ld", (long)[panic.campaignprice integerValue]];
                 _rightSellerValueLabel.text = [NSString stringWithFormat:@"%ld", (long)[panic.price integerValue]];
             }
         }

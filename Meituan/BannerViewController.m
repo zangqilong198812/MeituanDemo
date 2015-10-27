@@ -12,7 +12,8 @@
 static NSString *const kVerticalButtonCellID = @"kVerticalButtonCellID";
 
 
-@interface BannerViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@interface BannerViewController () <UICollectionViewDataSource, UICollectionViewDelegate,
+                                    UICollectionViewDelegateFlowLayout>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *bannerCollectionView;
 
@@ -35,21 +36,22 @@ static NSString *const kVerticalButtonCellID = @"kVerticalButtonCellID";
 
 #pragma mark - CollectionView DataSource && Delegate
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
+                  cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    VerticalButtonCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kVerticalButtonCellID forIndexPath:indexPath];
+    VerticalButtonCollectionViewCell *cell =
+        [collectionView dequeueReusableCellWithReuseIdentifier:kVerticalButtonCellID forIndexPath:indexPath];
 
     [cell.verticalButton setTitle:[NSString stringWithFormat:@"%d", indexPath.row] forState:UIControlStateNormal];
 
     return cell;
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return 16;
-}
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section { return 16; }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout *)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     return CGSizeMake((CGRectGetWidth(_bannerCollectionView.bounds) - 24) / 4, 67.5);
 }

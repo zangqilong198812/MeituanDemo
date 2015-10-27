@@ -31,9 +31,7 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)loadNewData
-{
-}
+- (void)loadNewData {}
 
 - (void)didReceiveMemoryWarning
 {

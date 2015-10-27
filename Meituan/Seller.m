@@ -14,23 +14,21 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-    return @{ @"mname" : @"mname",
-              @"title" : @"title",
-              @"range" : @"range",
-              @"price" : @"price",
-              @"value" : @"value",
-              @"nobooking" : @"nobooking",
-              @"solds" : @"solds",
-              @"squareimgurl" : @"squareimgurl",
+    return @{
+        @"mname" : @"mname",
+        @"title" : @"title",
+        @"range" : @"range",
+        @"price" : @"price",
+        @"value" : @"value",
+        @"nobooking" : @"nobooking",
+        @"solds" : @"solds",
+        @"squareimgurl" : @"squareimgurl",
     };
 }
 
 + (NSValueTransformer *)nobookingJSONTransformer
 {
-    return [NSValueTransformer mtl_valueMappingTransformerWithDictionary:@{
-        @(1) : @(YES),
-        @(0) : @(NO)
-    }];
+    return [NSValueTransformer mtl_valueMappingTransformerWithDictionary:@{ @(1) : @(YES), @(0) : @(NO) }];
 }
 
 

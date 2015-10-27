@@ -56,6 +56,9 @@ static NSString *const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCell
     //    } FailedBlock:^(NSError *error) {
     //
     //    }];
+    if (YES) {
+        NSLog(@"haah");
+    }
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface FamousSellerTableViewCell : UITableViewCell
 
 - (void)bindDataWithPanicBuying:(NSArray *)panicModelArray;

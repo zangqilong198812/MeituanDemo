@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface BaseCollectionViewController : UICollectionViewController
 
 @property (nonatomic, assign) BOOL shouldInitPullToRefresh;

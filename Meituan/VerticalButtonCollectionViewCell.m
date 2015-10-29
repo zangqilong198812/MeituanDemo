@@ -9,6 +9,7 @@
 #import "VerticalButtonCollectionViewCell.h"
 #import "UIButton+VerticalLayout.h"
 
+
 @implementation VerticalButtonCollectionViewCell
 
 - (void)awakeFromNib

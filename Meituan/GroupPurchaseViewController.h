@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BaseTableViewController.h"
 
+
 @interface GroupPurchaseViewController : BaseTableViewController
 
 @end

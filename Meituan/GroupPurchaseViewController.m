@@ -15,72 +15,68 @@
 #import "PanicBuying+request.h"
 #import "FamousSellerTableViewCell.h"
 
-static NSString * const kSellerTableViewCellID = @"kSellerTableViewCellID";
-static NSString * const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCellID";
+static NSString *const kSellerTableViewCellID = @"kSellerTableViewCellID";
+static NSString *const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCellID";
 
-@interface GroupPurchaseViewController ()<UITableViewDataSource, UITableViewDelegate>
-{
+
+@interface GroupPurchaseViewController () <UITableViewDataSource, UITableViewDelegate> {
     NSArray *sellerArray;
     NSArray *panicBuyingArray;
-    
+
     AFHTTPRequestOperation *operation;
 }
 
 @end
 
+
 @implementation GroupPurchaseViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     sellerArray = [NSArray new];
-    
+
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithHex:@"#06C1AE"]];
-    
+
     UITabBarItem *item = self.tabBarController.tabBar.items[0];
     [item setSelectedImage:[UIImage imageNamed:@"icon_tabbar_homepage_selected"]];
-    
+
     [self shouldAddPullToRefresh:YES];
-    
+
     [Seller requestSellerWithCompletion:^(id object) {
-        sellerArray = (NSArray *)object;
-        [self.tableView reloadData];
-    } FailedBlock:^(NSError *error) {
-        
+      sellerArray = (NSArray *)object;
+      [self.tableView reloadData];
+    } FailedBlock:^(NSError *error){
+
     }];
 
-    
-   
-//    [PanicBuying requestPanicBuyingWithCompletion:^(id object) {
-//        panicBuyingArray = (NSArray *)object;
-//        [self.tableView reloadData];
-//    } FailedBlock:^(NSError *error) {
-//        
-//    }];
-    
+
+    //    [PanicBuying requestPanicBuyingWithCompletion:^(id object) {
+    //        panicBuyingArray = (NSArray *)object;
+    //        [self.tableView reloadData];
+    //    } FailedBlock:^(NSError *error) {
+    //
+    //    }];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - TableView DataSource && Delegate
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 2;
-}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView { return 2; }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (section == 0) {
         return sellerArray.count;
-    }else
-    {
+    } else {
         return 1;
     }
-    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -89,18 +85,16 @@ static NSString * const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCel
         SellerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kSellerTableViewCellID];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         Seller *seller = sellerArray[indexPath.row];
-        
+
         [cell bindDataWithSeller:seller];
-        
+
         return cell;
-    }else{
+    } else {
         FamousSellerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kPanicBuyingTableViewCellID];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         [cell bindDataWithPanicBuying:panicBuyingArray];
         return cell;
     }
-    
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -111,14 +105,12 @@ static NSString * const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCel
     return 110.0f;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 35;
-}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section { return 35; }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    LineView *headerView = [[LineView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 30)];
+    LineView *headerView =
+        [[LineView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 30)];
     [headerView addLineWithLineType:LineViewTypeTop];
     UILabel *likeLabel = [[UILabel alloc] initWithFrame:CGRectMake(12, 0, 100, 35)];
     likeLabel.text = @"猜你喜欢";

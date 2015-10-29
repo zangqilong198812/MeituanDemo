@@ -9,7 +9,8 @@
 #import "MTLModel.h"
 #import "MTLJSONAdapter.h"
 
-@interface PanicBuying : MTLModel<MTLJSONSerializing>
+
+@interface PanicBuying : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, copy) NSString *mdcLogoUrl;
 @property (nonatomic, strong) NSNumber *price;

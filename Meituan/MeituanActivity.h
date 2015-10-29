@@ -9,7 +9,8 @@
 #import "MTLModel.h"
 #import "MTLJSONAdapter.h"
 
-@interface MeituanActivity : MTLModel<MTLJSONSerializing>
+
+@interface MeituanActivity : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, copy, readonly) NSString *imageurl;
 @property (nonatomic, copy, readonly) NSString *maintitle;

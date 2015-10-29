@@ -8,6 +8,7 @@
 
 #import "BaseTableViewController.h"
 
+
 @interface SellerViewController : BaseTableViewController
 
 @end

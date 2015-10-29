@@ -66,6 +66,18 @@ static NSString *const kPanicBuyingTableViewCellID = @"kPanicBuyingTableViewCell
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Pull To Refresh
+
+- (void)loadNewData
+{
+    [Seller requestSellerWithCompletion:^(id object) {
+      sellerArray = (NSArray *)object;
+      [self.tableView reloadData];
+    } FailedBlock:^(NSError *error){
+
+    }];
+}
+
 #pragma mark - TableView DataSource && Delegate
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView { return 2; }
